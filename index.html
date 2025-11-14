@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV - Marla Aguilar</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="animated-background">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="container">
+        
+        <div class="window-top-bar">
+            <div class="top-bar-left">
+                <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="tag-section">
+                    <span class="tag"> <a href="#about-me">Información</a></span>
+                    <span class="tag"><a href="#experience">Experiencia</a></span>
+                    <span class="tag"><a href="#skills">Habilidades</a></span>
+                    <span class="tag"> <a href="#projects">Proyectos</a></span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="Resources/Images/Profile.jpg" alt="Tu Foto de Perfil" class="profile-pic"> 
+            </div>
+            <h2>Marla Jasel Aguilar Aguilar</h2>
+            <p>Estudiante de Ingeniería de Software</p>
+            
+            <h3>Contacto</h3>
+            <ul>
+                <li>Email: <a href="mailto:marla838.aguilar@gmail.com">marla838.aguilar@gmail.com</a></li>
+                <li>Teléfono: <span>+52 2284962965</span></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/marla-aguilar-906a67391/" target="_blank">LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/Tearp89" target="_blank">GitHub</a></li>
+                <li>Ubicación: <span>Xalapa, Veracruz, México</span></li>
+            </ul>
+
+            <h3>Educación</h3>
+            <p>
+                Ingeniería de Software<br>
+                Universidad Veracruzana <br>
+                En curso
+            </p>
+            <h3>Idiomas</h3>
+            <ul class="language-list">
+                <li>Español: Nativo</li>
+                <li>Inglés:  B2 Intermedio Alto</li>
+                </ul>
+
+            <h3>Valores Clave</h3>
+            <ul class="value-list">
+                <li>Diseño UI/UX (Enfoque en el Usuario)</li>
+                <li>Ingeniería de Requisitos (Iconix Process)</li>
+                <li>Arquitectura Modular (SOA/Microservicios)</li>
+                <li>Análisis Estático de Código (SonarQube)</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="personal-info" id="about-me">
+                <h1>Sobre Mí</h1>
+                <p>Desarrolladora Full-Stack en formación, especializada en la Ingeniería de Requisitos (Iconix Process) y la construcción de sistemas empresariales robustos con experiencia práctica en C#/.NET, Java y JavaScript (Frontend multi-plataforma). Mi enfoque se centra en diseñar arquitecturas escalables y centralizar la lógica de negocio, como se demostró en la implementación de una plataforma distribuida orientada a servicios (SOA). Busco activamente una oportunidad de entrada que me permita aplicar mi sólida base técnica en un entorno de desarrollo profesional.</p>
+            </section>
+
+            <section class="experience-skills">
+                <h1>Experiencia y Habilidades</h1>
+                
+                <h2 id="experience">Experiencia Aplicada y Proyectos Clave</h2>
+
+                <div class="job">
+                    <h3>Dusk Sky (Plataforma Social Gamer) - Microservicios & Full-Stack</h3>
+                    <p>Proyecto Final de Asignatura / Arquitectura Orientada a Servicios (SOA)</p>
+                    <ul>
+                        <li><b>Diseñé e implementé</b> una plataforma distribuida que soporta <b>clientes en Escritorio (Electron), Web y Android</b>, reutilizando el mismo código fuente de Frontend.</li>
+                    </ul>
+
+                    <div class="more-info" id="more-duskinfo">
+                        <ul> 
+                            <li><b>Construí</b> la arquitectura Backend con <b>8 microservicios independientes</b> (Auth, Review, Game, etc.), utilizando <b>Python (FastAPI) y C# (ASP.NET Core)</b> y bases de datos mixtas (<b>MongoDB y PostgreSQL</b>).</li>
+                            <li><b>Aseguré</b> la escalabilidad y el aislamiento del entorno mediante la <b>contenerización (Docker)</b> de cada microservicio y la orquestación con Docker Compose.</li>
+                            <li><b>Implementé </b>funcionalidades sociales clave (reseñas, listas personalizadas, seguimiento de amigos) y un <b>Panel de Moderación</b> con gestión de reportes y sanciones.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-ver-mas" onclick="toggleDetails('more-duskinfo', this)">Ver más</button>
+                </div>
+                
+                <div class="job">
+                    <h3>ItaliaPizza (Sistema de Gestión Empresarial) - Ingeniería de Requisitos y .NET</h3>
+                    <p>Proyecto Final de Asignatura / Arquitectura Cliente-Servidor</p>
+                    <ul class="job-description">
+                        <li><b>Lideré</b> el análisis y diseño de un sistema <b>CRUD</b> centralizado para administrar 33 Casos de Uso (incluyendo Pedidos, Inventario, Recetas y Merma).</li>
+                    </ul>
+                    <div class="more-info" id="more-italiainfo">
+                    <ul>     
+                        <li><b>Apliqué</b> la metodología <b>Iconix Process</b> en la fase de Análisis y Diseño, generando Diagramas de Casos de Uso (32 casos), de Robustez y Secuencia para <b>garantizar la trazabilidad</b> de los requisitos funcionales.</li>
+                        <li><b>Desarrollé</b> la solución como una aplicación de escritorio <b>Cliente-Servidor</b> utilizando <b>WPF</b> para la interfaz y <b>SQL Server</b> como gestor de base de datos.</li>
+                        <li><b>Implementé</b> un módulo de <b>finanzas</b> que automatiza el balance diario y la conciliación de entradas/salidas de dinero, reemplazando el <b>manejo manual en papel</b> que generaba ineficiencias.</li>
+                    </ul>
+                    </div>
+                    <button class="btn-ver-mas" onclick="toggleDetails('more-italiainfo', this)">Ver más</button>
+                </div>
+
+                <div class="job">
+                    <h3>COIL-VIC (Gestión de Colaboraciones Académicas) - Modelado UML</h3>
+                    <p>Proyecto Final de Asignatura / Gestión de Procesos Interinstitucionales</p>
+                    <ul class="job-description">
+                        <li><b>Modelé</b> un sistema para optimizar la gestión de colaboraciones internacionales, definiendo 18 Casos de Uso (Solicitudes, Retroalimentación, Numeralia)[cite: 2284, 6182].</li>
+                    </ul>
+                    <div class="more-info" id="more-coilinfo">
+                        <ul>
+                            <li><b>Diseñé</b> el <b>Modelo de Dominio</b> para la gestión de entidades complejas: Colaboraciones, Profesores, Estudiantes y Universidades (incluyendo la Universidad Veracruzana y Externas)li>
+                            <li><b>Construí</b> la interfaz de usuario con <b>JavaFX</b> y <b>SceneBuilder</b>, enfocada en la usabilidad del Administrativo y Académico.</li>
+                            <li><b>Implementé</b> la funcionalidad de <b>Descarga de Numeralia</b> (datos estadísticos) en formato Excel (.xlsm) para la evaluación continua del proyecto.</li>
+                        </ul>
+                    </div>
+                    <button class="btn-ver-mas" onclick="toggleDetails('more-coilinfo', this)">Ver más</button>
+                </div>
+
+                <h3>Certificaciones y Metodología</h3>
+                <div class="job">
+                    <h3>Universidad Veracruzana - Ingeniería de Software</h3>
+                    <p>2022 - 2026</p>
+                    <div class="more-info" id="more-schoolinfo">
+                    <ul>
+                        <li><b>Dominio Práctico</b> de la metodología <b>Iconix Process</b> (UML/Casos de Uso) aplicada en proyectos de gestión (`ItaliaPizza`) y arquitectura de sistemas.</li>
+                        <li><b>Conocimiento</b> de <b>C#/.NET, Python, Java</b> y arquitectura SOA (Servicios Orientados a Servicios), demostrando versatilidad en entornos Full-Stack[cite: 9159, 9161].</li>
+                        <li><b>Certificado</b> en <b>HTML/CSS</b> (Curso Corto): Dominio en la creación de interfaces web y desktop adaptativas (Electron).</li>
+                        <li><b>Experiencia</b> en control de versiones con <b>Git</b> y aplicación de <b>Estándares de Codificación</b> definidos por el equipo[cite: 9283, 3742].</li>
+                    </ul>
+                    </div>
+                    <button class="btn-ver-mas" onclick="toggleDetails('more-schoolinfo', this)">Ver más</button>
+                </div>
+                
+
+                <h2 id="skills">Habilidades Clave</h2>
+                <ul class="skills-bar-list">
+                    
+                    <li class="skill-item">
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 90%;" data-level="90%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">CSS3</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 88%;" data-level="88%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">JavaScript (ES6+)</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 78%;" data-level="78%"></div>
+                        </div>
+                    </li>
+                    
+                    <li class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 75%;" data-level="75%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">C# & .NET</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 72%;" data-level="72%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 55%;" data-level="55%"></div>
+                        </div>
+                    </li>
+
+                    <li class="skill-item">
+                        <span class="skill-name">Metodología Iconix Process</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 85%;" data-level="85%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Metodologías Ágiles (Teórico)</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 60%;" data-level="60%"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <span class="skill-name">Git & GitHub</span>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-fill" style="width: 80%;" data-level="80%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <section class="projects-section" id="projects">
+            <h1>Proyectos Destacados</h1>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Dusk Sky</h3>
+                            <p>Plataforma social gamer.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Dusk Sky es una Plataforma Social Gamer desarrollada bajo una Arquitectura Orientada a Servicios (SOA) con el propósito de ofrecer a los jugadores un espacio para compartir experiencias, calificar videojuegos y gestionar su progreso.</p>
+                            <a href="https://github.com/Tearp89/Dusk-Sky" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>ItaliaPizza</h3>
+                            <p>Sistema completo para gestión de pedidos, inventario y sucursales de pizzerías.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Italia Pizza es un Sistema de Gestión Empresarial desarrollado para modernizar y optimizar las operaciones de una pizzería que anteriormente se gestionaba completamente de forma manual mediante registros en papel.</p>
+                            <a href="https://github.com/TonyVHT/SoftwarePizzeria" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Resources/Images/COIL-LOGO.png" alt="Dusk Sky Logo" class="project-logo"> 
+                            <h3>COIL-VIC</h3>
+                            <p>Plataforma de Gestión de Colaboraciones entre universidades</p> 
+                        </div>
+                        <div class="card-back">
+                            <p>COIL-VIC es un Sistema de Gestión Académica desarrollado para centralizar, controlar y optimizar los flujos de trabajo de Colaboraciones Interinstitucionales entre universidades (como la Universidad Veracruzana) y entidades externas.</p>
+                            <a href="https://github.com/Tearp89/Doormat" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>BMC</h3>
+                            <p>Juego de cartas digital de estrategia y combate por turnos tipo <b>Battlefield.</b></p>
+                        </div>
+                        <div class="card-back">
+                            <p>BMC (Battle Card Mechanic) es un Juego de Cartas Digital de Estrategia por Turnos con mecánicas inspiradas en los campos de batalla. Este proyecto demuestra tu capacidad para modelar sistemas complejos de lógica de juego y gestión de reglas.</p>
+                            <a href="https://github.com/ferrm360/BMCClient" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Doormat</h3>
+                            <p>Sistema completo para gestión de una Inmobiliaria.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Doormat es una Plataforma Web para Inmobiliarias diseñada para digitalizar la gestión de propiedades y optimizar la interacción con los clientes.</p>
+                            <a href="https://github.com/Tearp89/Doormat" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Sistema Constancias</h3>
+                            <p>Sistema completo para gestión de constancias de participación.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Este sistema fue diseñado para automatizar la generación, gestión y autorización de constancias académicas, reemplazando procesos manuales.</p>
+                            <a href="https://github.com/Drawiel/Constancias" target="_blank">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

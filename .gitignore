@@ -1,0 +1,56 @@
+# -------------------------------------
+# Archivos de la web/Sistema Operativo
+# -------------------------------------
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-debug.log
+.idea/
+.vscode/
+
+# Archivos temporales o de caché
+*.log
+*.tmp
+temp/
+/dist/
+/build/
+
+# -------------------------------------
+# Backend/Lenguajes de Ingeniería (C#, Java)
+# -------------------------------------
+# .NET / C#
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.suo
+*.user
+*.useros
+*.vspscc
+*.vssscc
+
+# Java / IDEs (IntelliJ, Eclipse)
+*.class
+*.jar
+*.war
+*.ear
+/out/
+/target/
+.classpath
+.project
+.settings/
+
+# -------------------------------------
+# Gestor de Dependencias y Entornos
+# -------------------------------------
+/node_modules
+/venv
+npm-debug.log*
+yarn-error.log*
+
+# -------------------------------------
+# Archivos de Seguridad y Configuración
+# -------------------------------------
+# ¡CRÍTICO! Nunca subir archivos con secretos
+.env
+config.local.js
+secrets.json
