@@ -1,4 +1,4 @@
-# 🌊 CV Interactivo | [Tu Nombre] | Full-Stack & Arquitectura de Software
+# 🌊 CV Interactivo | Marla Aguilar | Full-Stack & Arquitectura de Software
 
 Este repositorio contiene mi Currículum Vitae interactivo, diseñado como un proyecto de portafolio para demostrar mis habilidades avanzadas en **Frontend (CSS/JS)** y mi experiencia en **Ingeniería de Software (Modelado UML, SOA, Docker)**.
 
